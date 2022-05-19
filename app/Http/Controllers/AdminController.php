@@ -8,8 +8,10 @@ use App\Models\User;
 
 class AdminController extends Controller
 {
+    function historical(){
+        return view('dashboards.admins.historical');
+    }
     function index(){
-
         return view('dashboards.admins.index');
        }
     
@@ -34,7 +36,7 @@ class AdminController extends Controller
                     $query = User::find(Auth::user()->id)->update([
                          'name'=>$request->name,
                          'email'=>$request->email,
-                         'favoriteColor'=>$request->favoritecolor,
+                         
                     ]);
 
                     if(!$query){

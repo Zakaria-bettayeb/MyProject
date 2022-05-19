@@ -25,7 +25,7 @@
 								@csrf
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus placeholder="Enter E-Mail Address">
+									<input id="email" type="email" class="form-control" name="email" value="" required autofocus placeholder="Enter your email address">
 									<span class="text-danger">@error('email'){{$message}}@enderror </span>
 								</div>
 
@@ -35,7 +35,7 @@
 											Forgot Password?
 										</a>
 									</label>
-									<input id="password" type="password" class="form-control" name="password" required data-eye placeholder="Enter Password"  >
+									<input id="password" type="password" class="form-control" name="password" required data-eye placeholder="Enter your password"  >
 								    <span class="text-danger">@error('password'){{$message}}@enderror </span>
 								</div>
 

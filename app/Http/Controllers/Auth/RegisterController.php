@@ -31,6 +31,7 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+    
 
     /**
      * Create a new controller instance.
@@ -53,7 +54,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'favoriteColor' => 'required',
+            
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
@@ -78,7 +79,7 @@ class RegisterController extends Controller
     $request->validate([
         'name' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        'favoriteColor' => 'required',
+       
         'password' => ['required', 'string', 'min:8', 'confirmed'],
 
     ]);
@@ -101,15 +102,16 @@ class RegisterController extends Controller
     $user->name = $request->name;
     $user->email = $request->email;
     $user->role = 1;
-    $user->favoriteColor = $request->favoriteColor;
+    
    // $user->picture = $picture;
     $user->password = \Hash::make($request->password);
 
     if ($user->save() ){
-        return redirect()->back()->with('success','You are now successfully registerd');
+        return redirect()->back()->with('success','Thanks! your account has been successfully created');
     }else{
        return redirect()->back()->with('error','failed to register');
     }
 
    }
+   
 }

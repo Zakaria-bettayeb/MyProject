@@ -39,31 +39,27 @@
 								@endif
 							@csrf
 								<div class="form-group">
-									<label for="name">Name</label>
-									<input id="name" type="text" class="form-control" name="name" required autofocus placeholder="Enter Name" value="{{old('name')}}">
+									<label for="name">Full name</label>
+									<input id="name" type="text" class="form-control" name="name" required autofocus placeholder="Enter your full name" value="{{old('name')}}">
 									<span class="text-danger">@error('name'){{$message}}@enderror </span>
 								
 								</div>
 
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" required placeholder="Enter E-Mail Address" value="{{old('email')}}">
+									<input id="email" type="email" class="form-control" name="email" required placeholder="Enter your email address" value="{{old('email')}}">
 									<span class="text-danger">@error('email'){{$message}}@enderror </span>
 								</div>
-								<div class="form-group">
-									<label for="favoriteColor">Favorite Color</label>
-									<input id="favoriteColor" type="email" class="form-control" name="favoriteColor" required placeholder="Enter Favorite Color">
-									<span class="text-danger">@error('favoriteColor'){{$message}}@enderror </span>
-								</div>
+							
 
 								<div class="form-group">
 									<label for="password">Password</label>
-									<input id="password" type="password" class="form-control" name="password" required data-eye placeholder="Enter Password">
+									<input id="password" type="password" class="form-control" name="password" required data-eye placeholder="minimum 8 characters in length">
 									<span class="text-danger">@error('password'){{$message}}@enderror </span>
 								</div>
 								<div class="form-group">
 									<label for="password">Confirm Password</label>
-									<input id="password_confirm" type="password" class="form-control" name="password_confirmation" required data-eye placeholder="Enter Confirm Password">
+									<input id="password_confirm" type="password" class="form-control" name="password_confirmation" required data-eye placeholder="Confirm your password">
 									<span class="text-danger">@error('password_confirm'){{$message}}@enderror </span>
 								</div>
 

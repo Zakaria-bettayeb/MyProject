@@ -77,10 +77,10 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label for="inputName2" class="col-sm-2 col-form-label">Favorite Color</label>
+                          <label for="inputName2" class="col-sm-2 col-form-label">Age</label>
                           <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputName2" placeholder="Favorite color" value="{{ Auth::user()->favoriteColor }}" name="favoritecolor">
-                            <span class="text-danger error-text favoritecolor_error"></span>
+                            <input type="text" class="form-control" id="inputName2" placeholder="Age" value="{{ Auth::user()->Age }}" name="Age">
+                            <span class="text-danger error-text Age_error"></span>
                           </div>
                         </div>
                         <div class="form-group row">

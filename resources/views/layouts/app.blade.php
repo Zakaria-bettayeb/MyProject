@@ -74,8 +74,8 @@
                 </div>
             </div>
         </nav>
-        
         <main class="py-4">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
             @yield('content')
         </main>
     </div>
