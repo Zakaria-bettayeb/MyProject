@@ -3,6 +3,70 @@
 
 
 @section('content')
+
+{{--<h1>parameters</h1>--}}
+{{--    <div class="row">--}}
+{{--        <div class="col-lg-3 col-6">--}}
+{{--            <!-- small box -->--}}
+{{--            <div class="small-box bg-info">--}}
+{{--                <div class="inner">--}}
+{{--                    <h3>150</h3>--}}
+
+{{--                    <p>New Orders</p>--}}
+{{--                </div>--}}
+{{--                <div class="icon">--}}
+{{--                    <i class="ion ion-bag"></i>--}}
+{{--                </div>--}}
+{{--                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <!-- ./col -->--}}
+{{--        <div class="col-lg-3 col-6">--}}
+{{--            <!-- small box -->--}}
+{{--            <div class="small-box bg-success">--}}
+{{--                <div class="inner">--}}
+{{--                    <h3>53<sup style="font-size: 20px">%</sup></h3>--}}
+
+{{--                    <p>Bounce Rate</p>--}}
+{{--                </div>--}}
+{{--                <div class="icon">--}}
+{{--                    <i class="ion ion-stats-bars"></i>--}}
+{{--                </div>--}}
+{{--                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <!-- ./col -->--}}
+{{--        <div class="col-lg-3 col-6">--}}
+{{--            <!-- small box -->--}}
+{{--            <div class="small-box bg-warning">--}}
+{{--                <div class="inner">--}}
+{{--                    <h3>44</h3>--}}
+
+{{--                    <p>User Registrations</p>--}}
+{{--                </div>--}}
+{{--                <div class="icon">--}}
+{{--                    <i class="ion ion-person-add"></i>--}}
+{{--                </div>--}}
+{{--                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <!-- ./col -->--}}
+{{--        <div class="col-lg-3 col-6">--}}
+{{--            <!-- small box -->--}}
+{{--            <div class="small-box bg-danger">--}}
+{{--                <div class="inner">--}}
+{{--                    <h3>65</h3>--}}
+
+{{--                    <p>Unique Visitors</p>--}}
+{{--                </div>--}}
+{{--                <div class="icon">--}}
+{{--                    <i class="ion ion-pie-graph"></i>--}}
+{{--                </div>--}}
+{{--                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <!-- ./col -->--}}
+{{--    </div>--}}
 <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
@@ -21,28 +85,90 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <div class="row">
-                 
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-right">
-                    <div style="display:inline;width:120px;height:120px;"><canvas width="150" height="150" style="width: 120px; height: 120px;"></canvas><input type="text" class="knob" value="30" data-width="120" data-height="120" data-fgcolor="#f56954" style="width: 64px; height: 40px; position: absolute; vertical-align: middle; margin-top: 40px; margin-left: -92px; border: 0px; background: none; font: bold 24px Arial; text-align: center; color: rgb(245, 105, 84); padding: 0px; appearance: none;"></div>
+                  <div class="row">
+                      <div  class="col-lg-6 col-6">
+                          <!-- small box -->
+                          <div  class="small-box bg-info">
+                              <div class="inner" style="background-color: #00ff80">
+                                  <h3 style="color: red">150</h3>
 
-                    <div class="knob-label">Temperature </div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-right">
-                    <div style="display:inline;width:90px;height:90px;"><canvas width="112" height="112" style="width: 90px; height: 90px;"></canvas><input type="text" class="knob" value="30" data-thickness="0.1" data-width="90" data-height="90" data-fgcolor="#00a65a" style="width: 49px; height: 30px; position: absolute; vertical-align: middle; margin-top: 30px; margin-left: -69px; border: 0px; background: none; font: bold 18px Arial; text-align: center; color: rgb(0, 166, 90); padding: 0px; appearance: none;"></div>
+                                  <p>New Orders</p>
+                              </div>
+                              <div class="icon">
+{{--                                  <i class="ion ion-bag"></i>--}}
+{{--                                  <i class="fa-solid fa-temperature-list"></i>--}}
+                                  <i class="fas fa-temperature-low"></i>
+                              </div>
+                              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                          </div>
+                      </div>
+                      <!-- ./col -->
+                      <div class="col-lg-6 col-6">
+                          <!-- small box -->
+                          <div class="small-box bg-success">
+                              <div class="inner">
+                                  <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                    <div class="knob-label">Soil moisture </div>
+                                  <p>Bounce Rate</p>
+                              </div>
+                              <div class="icon">
+                                  <i class="ion ion-stats-bars"></i>
+                              </div>
+                              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                          </div>
+                      </div>
+                      <!-- ./col -->
+                      <!-- ./col -->
                   </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-right">
-                    <div style="display:inline;width:120px;height:120px;"><canvas width="150" height="150" style="width: 120px; height: 120px;"></canvas><input type="text" class="knob" data-thickness="0.2" data-anglearc="250" data-angleoffset="-125" value="30" data-width="120" data-height="120" data-fgcolor="#00c0ef" style="width: 64px; height: 40px; position: absolute; vertical-align: middle; margin-top: 40px; margin-left: -92px; border: 0px; background: none; font: bold 24px Arial; text-align: center; color: rgb(0, 192, 239); padding: 0px; appearance: none;"></div>
+                  <div class="row">
+                      <div  class="col-lg-4 col-6">
+                          <!-- small box -->
+                          <div  class="small-box bg-info">
+                              <div class="inner" style="background-color: #00ff80">
+                                  <h3 style="color: red">150</h3>
 
-                    <div class="knob-label">Air humidity </div>
+                                  <p>New Orders</p>
+                              </div>
+                              <div class="icon">
+{{--                                  <i class="ion ion-bag"></i>--}}
+{{--                                  <i class="fa-solid fa-temperature-list"></i>--}}
+                                  <i class="fas fa-temperature-low"></i>
+                              </div>
+                              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                          </div>
+                      </div>
+                      <!-- ./col -->
+                      <div class="col-lg-4 col-6">
+                          <!-- small box -->
+                          <div class="small-box bg-success">
+                              <div class="inner">
+                                  <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                                  <p>Bounce Rate</p>
+                              </div>
+                              <div class="icon">
+                                  <i class="ion ion-stats-bars"></i>
+                              </div>
+                              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                          </div>
+                      </div>
+                      <!-- ./col -->
+                      <div class="col-lg-4 col-6">
+                          <!-- small box -->
+                          <div class="small-box bg-warning">
+                              <div class="inner">
+                                  <h3>44</h3>
+
+                                  <p>User Registrations</p>
+                              </div>
+                              <div class="icon">
+                                  <i class="ion ion-person-add"></i>
+                              </div>
+                              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                          </div>
+                      </div>
+                      <!-- ./col -->
                   </div>
-                  <!-- ./col -->
-                </div>
                 <!-- /.row -->
               </div>
               <!-- /.card-body -->
